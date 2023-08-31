@@ -4,14 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cypress-open-testingTag": "cypress open grepTags=@testingTag",
+    "cypress-open-not-testingTag": "cypress open --env grepTags=-@testingTag"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^12.6.0"
+    "cypress": "^12.17.4"
   },
   "devDependencies": {
+    "@cypress/grep": "^4.0.0",
     "cypress-mochawesome-reporter": "^3.3.0"
   }
 }
