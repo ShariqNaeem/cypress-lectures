@@ -2,7 +2,7 @@
 
 describe('Homepage test cases', () => {
 
-  it('Visit opencart application', () => {
+  it('Visit opencart application',{ tags: '@testingTag' }, () => {
 
     cy.visit('http://opencart.abstracta.us'); // By this command we will navigate to the applicaion
 

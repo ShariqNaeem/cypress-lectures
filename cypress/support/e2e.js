@@ -17,6 +17,8 @@
 import './commands'
 import 'cypress-mochawesome-reporter/register';
 import addContext from "mochawesome/addContext";
+import registerCypressGrep from '@cypress/grep/src/support'
+registerCypressGrep()
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 Cypress.on("test:after:run", (test, runnable) => {  
